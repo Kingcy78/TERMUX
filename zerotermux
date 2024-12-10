@@ -1,0 +1,9 @@
+pkg update && pkg upgrade  -y
+pkg install python nano wget  -y
+pkg install unzip -y
+
+wget https://bin.equinox.io/c/bNyj1mQVY4c/ngrok-stable-linux-arm.zip
+apt install unzip
+unzip ngrok-stable-linux-arm.zip
+
+python -m http.server 8080
